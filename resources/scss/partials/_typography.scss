@@ -1,9 +1,16 @@
 /* --------------------------------
             TYPOGRAPHY
 -------------------------------- */
+@import './variables';
 
 //? typography:
-body {font-family: 'Ubuntu Condensed', sans-serif; font-size: 18px;}
+body {font-size: 24px;}
+
+h1, h2, h3, h4, h5, h6 {font-family: "Spectral", serif;}
+
+a, p, span, li, small, button, form {font-family: "Rajdhani", sans-serif;}
+
+
 
 h1 {font-size: 4rem;}
 h2 {font-size: 3rem;}
