@@ -78,8 +78,8 @@ class ProjectSeeder extends Seeder
             $project->project_grade = $faker->numberBetween(3, 10);
             // $project->delete = false;
             
-            $project->save();
-            // dd($project);
+            // $project->save();
+            dd($project);
 
         }
     }
