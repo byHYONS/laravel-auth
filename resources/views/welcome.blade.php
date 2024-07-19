@@ -6,11 +6,11 @@
 
             <h1 class="headline">
                 Ciao, sono <span>Samuele Paratore</span> <br>
-                <span>Fullstack</span> Web Developer <br>
+                <span>FullStack</span> Web Developer <br>
             </h1>
 
             <h3 class="subheadline">
-                esperto di marketing a 360° e fondatore della agenzia di<br> 
+                esperto di marketing a 360° e fondatore dell'Agenzia di<br> 
                 Marketing<span> byHYONS</span>
             </h3>
         </div>
@@ -18,13 +18,13 @@
 
     <div class="container pt-3 pb-5">
         <p>
-            Prendere in mano un progetto, per me significa, effettuare un viaggio stimolante e sofisticato che va dalla <span>ricerca maniacale del tuo mercato</span>, dei tuoi clienti e del tuo prodotto.
+            Prendere in mano un progetto, per me significa, effettuare un viaggio stimolante e sofisticato che va dalla <span>ricerca maniacale del tuo mercato</span>, dei tuoi clienti e del tuo prodotto...
         </p>
         <p> 
-            Passando per lo studio delle <span>più efficaci tecniche di vendita</span>, come decidere queli canali sono più adatti per il tuo pubblico ma soprattutto creare dei <span>messaggio in copy</span> che siano calibrati sul tuo pubblico...
+            Passando per lo studio delle <span>più efficaci tecniche di vendita</span>, come decidere queli canali sono più adatti per il tuo pubblico, ma soprattutto creare dei <span>messaggio in copy</span> che siano calibrati sul tuo pubblico...
         </p>
         <p> 
-            Per poi, con il confezionamento alla perfezione di <span>tutto il materiale di marketing</span> occorrente per creare la macchina di vendita più potente per il tuo progetto.
+            Per poi, confezionare alla perfezione <span>tutto il materiale di marketing</span> occorrente per creare la macchina di vendita più potente per il tuo progetto.
         </p>
     </div>
     
