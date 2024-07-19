@@ -27,8 +27,10 @@ Route::middleware('auth', 'verified')
 
     Route::get('/', [DashboarController::class, 'index'])->name('dashboard');
 
-    //? project:
-    Route::resource('projects', ProjectController::class);
+    //? Recources Project:
+    Route::resource('projects', ProjectController::class)
+    //* chiamo la rotta con lo slug e non con l'id:
+    ->parameters(['projects' => 'project:slug']);
     
     
 });

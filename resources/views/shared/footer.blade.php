@@ -46,6 +46,9 @@
                         <a class="footer-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
                     @auth
+                    <li class="nav-item">
+                        <a class="footer-link" href="{{ route('admin.dashboard') }}">{{ __('Dashboard') }}</a>
+                    </li>
                     <li>
                         <a class="footer-link" href="{{ route('admin.projects.index') }}">{{ __('Projects') }}</a>
                     </li>
