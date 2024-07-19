@@ -2,9 +2,9 @@
 <footer class="bg-footer">
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col col-xl-3 col-md-6 col-12">
                 <div class="logo-byhyons">
-                    <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/') }}">
                         <div class="logo_byhyons mt-5">
                             {{--? SVG --}}
                             <svg width="50%" height="50%" viewBox="0 0 33334 14584" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3 align">
+            <div class="col-xl-3 col-md-6 col-12 align">
                 <p class="mt-5"> <span class="headline">Menu di Navigazione:</span> </p>
                 <ul class="">
                     <li>
@@ -53,7 +53,7 @@
                 </ul>
                 
             </div>
-            <div class="col-3 align">
+            <div class="col-xl-3 col-md-6 col-12 align">
                 <p class="mt-5"> <span class="headline">Autenticazione:</span> </p>
 
                 <ul class="">
@@ -89,7 +89,7 @@
                     @endguest
                 </ul>
             </div>
-            <div class="col-3 align">
+            <div class="col-xl-3 col-md-6 col-12 align">
                 <p class="mt-5"> <span class="headline">Saguimi Su:</span> </p>
                 <div class="instagram logo-social">
                     <a href="https://www.instagram.com/byhyons/" target="_blank">

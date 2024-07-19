@@ -3,10 +3,11 @@
 -------------------------------- */
 
 main {
+    // overflow: auto;
     width: 100vw;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(116, 110, 110, 0.5)),
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
         url('../img/bg-body.jpg');
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,4 +22,3 @@ main {
     }
 }
 
-// body {background-color: #fff;}

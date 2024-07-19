@@ -1,24 +1,33 @@
 @extends('layouts.app')
 @section('content')
+<div class="welcame">
     <div class="jumbotron p-5 mb-4 bg-light rounded-3">
-        <div class="container py-5">
+        <div class="container mt-5 py-5">
 
-            <h1 class="display-5 fw-bold">
-                Welcome to Laravel+Bootstrap
+            <h1 class="headline">
+                Ciao, sono <span>Samuele Paratore</span> <br>
+                <span>Fullstack</span> Web Developer <br>
             </h1>
 
-            <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in
-                previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
-                liking.</p>
-            <button class="btn btn-primary btn-lg" type="button">Example button</button>
+            <h3 class="subheadline">
+                esperto di marketing a 360° e fondatore della agenzia di<br> 
+                Marketing<span> byHYONS</span>
+            </h3>
         </div>
     </div>
 
-    <div class="content">
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora temporibus, dicta nemo aliquam totam nisi
-                deserunt soluta quas voluptatum ab beatae praesentium necessitatibus minus, facilis illum rerum officiis
-                accusamus dolores!</p>
-        </div>
+    <div class="container pt-3 pb-5">
+        <p>
+            Prendere in mano un progetto, per me significa, effettuare un viaggio stimolante e sofisticato che va dalla <span>ricerca maniacale del tuo mercato</span>, dei tuoi clienti e del tuo prodotto.
+        </p>
+        <p> 
+            Passando per lo studio delle <span>più efficaci tecniche di vendita</span>, come decidere queli canali sono più adatti per il tuo pubblico ma soprattutto creare dei <span>messaggio in copy</span> che siano calibrati sul tuo pubblico...
+        </p>
+        <p> 
+            Per poi, con il confezionamento alla perfezione di <span>tutto il materiale di marketing</span> occorrente per creare la macchina di vendita più potente per il tuo progetto.
+        </p>
     </div>
+    
+</div>
+    
 @endsection
