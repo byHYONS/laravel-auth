@@ -23,4 +23,18 @@ main {
 }
 
 
+//? per modale:
+.no-scroll {overflow: hidden;}
+.screen.holding {display: none;}
+.holding {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: $footer, $alpha: .7);
+    z-index: 100;
+}
+
 

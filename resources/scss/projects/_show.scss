@@ -27,6 +27,7 @@
             .manage {
                 display: flex;
                 align-items: center;
+                cursor: pointer;
                 .create {
                     
                     a {
@@ -65,7 +66,53 @@
                         &:hover {background-color: $delete; color: $text2}
                     }
                 }
+            
+                .holding {display: none;}
+                .delete__modale{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $table;
+                    width: 500px;
+                    border-radius: 15px;
+                    padding: 35px;
+                    text-align: center;
+                    z-index: 200;
+                    @extend %shadow;
                 
+                    span.modale__exit {
+                        font-family: 'Ubuntu Condensed', sans-serif;
+                        position: absolute;
+                        right: 35px;
+                        top: 35px;
+                        font-size: 24px;
+                        font-weight: 900;
+                        color: $text3;
+                        cursor: pointer;
+                        &:hover {transform: scale(1.1);}
+                    }
+                    h4 {
+                        font-size: 26px;
+                        font-weight: 900;
+                        color: $h_1;
+                        margin-top: 60px;
+                    }
+                    form {text-align: center;}
+                    input.delete {
+                        display: inline-block;
+                        margin-top: 25px;
+                        border: none;
+                        padding: 10px 40px;
+                        border-radius: 15px;
+                        background-color: $btn;
+                        color: $text2;
+                        @extend %shadow;
+                        &:hover {background-color: $h_1; font-weight: 400;}
+ 
+                    }
+                
+                }              
     
             }
         }
@@ -101,4 +148,5 @@
 
     }
 }
+
 

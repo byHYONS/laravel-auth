@@ -40,6 +40,7 @@ class StoreProjectRequest extends FormRequest
     public function messages()
     {
         return [
+            'title.unique' => 'Titolo già esistente',
             'title.required' => 'Il titolo è obbligatorio',
             'title.min' => 'Inserisci almeno 5 caratteri',
             'title.max' => 'Inserisci massimo 10 caratteri',

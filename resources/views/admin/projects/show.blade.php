@@ -1,3 +1,5 @@
+<div class="screen holding">
+
 @extends('layouts.app')
 
 @section('content')
@@ -15,12 +17,24 @@
                 <div class="create">
                     <a href="{{route('admin.projects.create') }}">{{ __('Crea Nuovo')}}</a>
                 </div>
-                <a href="{{route('admin.projects.update', $project)}}" class="ml-45 mr-10">
+                <a href="{{route('admin.projects.edit', $project)}}" class="ml-45 mr-10">
                     <i class="fas fa-pen"></i>
                 </a>
-                <a href="{{route('admin.projects.destroy', $project)}}">
+                <a href="#" class="destroy">
                     <i class="fas fa-trash"></i>
                 </a>
+
+                {{--? modale --}}
+                <div class="delete__modale holding">
+                    <span class="modale__exit">CHIUDI</span>
+                    <h4>Sei sicuro di voler cancellare?</h4>
+                    <p>La cancellazione è irreversibile</p>
+                    <form action="{{route('admin.projects.destroy', $project)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <input class="delete" type="submit" value="Elimina Elemento">
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -54,9 +68,11 @@
                 <span>Link Progetto: </span> 
                 <a class="no-btn" href="{{$project->link}}" target="_blank">{{$project->link}}</a>
             </p>
+
         </div>
     </div>
 </div>
     
 @endsection
 
+</div>
