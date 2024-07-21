@@ -5,9 +5,79 @@
 .project-show {
 
     .container {
-
-        .content {
-
+        .button-manage {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+            
+            a {
+                padding: 8px 20px;
+                border-radius: 12px;
+                background-color: $footer;
+                color: $text2;
+                margin-bottom: 20px;
+                @extend %shadow;
+    
+                &:hover {opacity: .9;}
+    
+            }
+            .manage {
+                a {
+                    all: unset;
+                    
+                    .fa-pen {
+                        margin-right: 10px;
+                        padding: 8px;
+                        border-radius: 10px;
+                        color: rgb(255, 187, 0);
+                        border: 3px solid rgb(255, 187, 0);
+                        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+                        &:hover {background-color: rgb(255, 187, 0); color: $text2}
+                    }
+                    .fa-trash {
+                        color: $btn;
+                        padding: 8px;
+                        border: 3px solid $btn;
+                        border-radius: 10px;
+                        filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+                        &:hover {background-color: $btn; color: $text2}
+                    }
+                }
+                
+    
+            }
         }
+
+        .card {
+            border-radius: 15px;
+            @extend %shadow;
+
+            p {
+                span {
+                    color: $h_1;
+                    font-weight: 600;
+                }
+
+                .fa-circle {
+                    color: $h_1;
+                    font-size: 6px;
+                    vertical-align: middle;
+                    margin: 0 15px;
+                }
+
+                a {
+                    border: none;
+                    background-color: unset;
+                    box-shadow: none;
+                    color: $h_3;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration: underline;
+                }
+            }
+        }
+
     }
 }
+
