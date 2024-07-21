@@ -3,12 +3,29 @@
 -------------------------------- */
 
 .project-list {
+    
+    .create {
+        margin-bottom: 40px;
 
+        a {
+            padding: 8px 20px;
+            border-radius: 12px;
+            border: 3px solid $create;
+            font-weight: 600;
+            color: $create;
+            filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+            &:hover {
+                background-color: $create;
+                color: $text2;
+            }
+        }
+    }
     .table-project {
-        background-color: #fff;
+        background-color: $table;
         padding: 35px;
         border-radius: 15px;
         @extend %shadow;
+
 
         table.custom-table {
 
@@ -21,25 +38,25 @@
             display: inline-block;
     
             .fa-sistrix {
-                color: rgb(0, 123, 255);
+                color: $show;
                 padding: 8px;
-                border: 1.5px solid rgb(0, 123, 255);
+                border: 1.5px solid $show;
                 border-radius: 5px;
-                &:hover {background-color: rgb(0, 123, 255); color: $text2}
+                &:hover {background-color: $show; color: $text2}
             }
             .fa-pen {
-                color: rgb(255, 187, 0);
+                color: $edit;
                 padding: 8px;
-                border: 1.5px solid rgb(255, 187, 0);
+                border: 1.5px solid $edit;
                 border-radius: 5px;
-                &:hover {background-color: rgb(255, 187, 0); color: $text2}
+                &:hover {background-color: $edit; color: $text2}
             }
             .fa-trash {
-                color: $btn;
+                color: $delete;
                 padding: 8px;
-                border: 1.5px solid $btn;
+                border: 1.5px solid $delete;
                 border-radius: 5px;
-                &:hover {background-color: $btn; color: $text2}
+                &:hover {background-color: $delete; color: $text2}
             }
         }
     }

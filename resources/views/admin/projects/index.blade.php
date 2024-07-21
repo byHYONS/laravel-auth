@@ -3,6 +3,11 @@
 @section('content')
     <div class="project-list py-75">
         <div class="container">
+            {{--? bottone crea --}}
+            <div class="create">
+                <a href="{{route('admin.projects.create') }}">{{ __('Crea Nuovo')}}</a>
+            </div>
+
             <div class="table-project">
                 <table class="table custom-table">
                     <thead class="table-deshboard">

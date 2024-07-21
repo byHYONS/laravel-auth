@@ -5,10 +5,16 @@
 <div class="project-show p-5">
     <div class="container">
         <div class="button-manage">
+            {{--? bottone indietro --}}
             <div class="back">
-                <a href="{{route('admin.projects.index') }}">{{ __('Indietro')}}</a>
+                <a href="{{route('admin.projects.index') }}">{{ __('Indietro')}}</a>              
             </div>
+
+            {{--? bottoni gestione --}}
             <div class="manage">
+                <div class="create">
+                    <a href="{{route('admin.projects.create') }}">{{ __('Crea Nuovo')}}</a>
+                </div>
                 <a href="{{route('admin.projects.update', $project)}}" class="ml-45 mr-10">
                     <i class="fas fa-pen"></i>
                 </a>
@@ -18,6 +24,7 @@
             </div>
         </div>
 
+        {{--? dettaglio informazioni --}}
         <div class="card p-5">
             <h2>{{$project->title}}</h2>
             <hr class="mb-5">
@@ -52,3 +59,4 @@
 </div>
     
 @endsection
+
