@@ -12,7 +12,7 @@
 
         <div class="add-project">
 
-            <h2>Aggiungi Progetto:</h2>
+            <h2>Modifica Progetto:</h2>
             <hr class="mt-25 mb-50">
 
             {{--? messagio di avviso degli errori nella compilazione del form --}}
@@ -131,7 +131,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="technologies_used" class="form-label">Tecnologie Usate: </label>
-                    <input type="text" class="form-control @if($errors->get('technologies_used')) is-invalid @endif" value="{{ old('technologies_used', $project->technolies_used)}}" id="technologies_used" name="technologies_used">
+                    <input type="text" class="form-control @if($errors->get('technologies_used')) is-invalid @endif" value="{{ old('technologies_used', $project->technologies_used)}}" id="technologies_used" name="technologies_used">
                     @if ($errors->get('technologies_used'))
                         @foreach ($errors->get('technologies_used') as $message)
                             <div class="invalid-feedback">

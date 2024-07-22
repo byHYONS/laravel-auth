@@ -39,7 +39,7 @@
                                         </a>
 
                                         {{--todo NON RIESCO A PASSARE L'IDENTIFICATIVO GIUSTO, PRENDE IN AUTOMATICO IL PRIMO DELLA LISTA --}}
-                                        <a href="#" class="destroy" data-slug="{{$project->slug}}">
+                                        <a href="{{$project->slug}}" class="destroy" data-slug="{{$project->slug}}">
                                             <i class="fas fa-trash"></i>
                                         </a>                                       
                                         {{--? modale --}}

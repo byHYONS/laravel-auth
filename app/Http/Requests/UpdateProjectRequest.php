@@ -28,7 +28,7 @@ class UpdateProjectRequest extends FormRequest
                 'string',
                 'min:3',
                 'max:100',
-                Rule::unique('projects', 'title')->ignore($this->projets),
+                Rule::unique('projects', 'title')->ignore($this->project),
             ],
             'description' => 'nullable|string|min:10',
             'market_category' => 'nullable|string|min:5|max:150',
