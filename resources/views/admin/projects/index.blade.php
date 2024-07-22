@@ -39,7 +39,7 @@
                                         </a>
 
                                         {{--todo NON RIESCO A PASSARE L'IDENTIFICATIVO GIUSTO, PRENDE IN AUTOMATICO IL PRIMO DELLA LISTA --}}
-                                        <a href="{{route('admin.projects.destroy', $project)}}" class="destroy" data-slug="{{$project->slug}}">
+                                        <a href="#" class="destroy" data-slug="{{$project->slug}}">
                                             <i class="fas fa-trash"></i>
                                         </a>                                       
                                         {{--? modale --}}
@@ -48,7 +48,7 @@
                                             <h4>Sei sicuro di voler cancellare?</h4>
                                             <p>La cancellazione è irreversibile</p>
                                             <form id="delete-form-{{$project->slug}}" action="{{route('admin.projects.destroy', $project->slug)}}" method="POST">
-                                                {{--! @dd($project->slug) --}}
+                                                {{-- @dd($project->slug) --}}
                                                 @csrf
                                                 @method('DELETE')
                                                 <input class="delete" type="submit" value="Elimina Elemento">

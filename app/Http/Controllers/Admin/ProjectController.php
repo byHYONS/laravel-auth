@@ -70,7 +70,7 @@ class ProjectController extends Controller
     {
         $data = $request->validated();
   
-        $project->update($data);
+        $project->update($data); //* va dopo l'aggiornamento slug se no devo inserire anche il save()
 
         $slug = Str::of($project->title)->slug('-');
         $project->slug = $slug;
