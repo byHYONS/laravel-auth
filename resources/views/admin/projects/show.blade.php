@@ -53,33 +53,21 @@
                 </div>
                 <div class="text">
                     <ul>
-                        <li>
+                        <li class="mb-3">
                             <span>Qualit&agrave; del Progetto: </span>{{$project->project_grade}} su 10 
                         </li>
-                        <li>
+                        <li class="mb-3">
                             <span>Categoria: </span>{{$project->market_category}}
                         </li>
-                        <li>
+                        <li class="mb-3">
                             <span>Materiale Creato: </span>{{$project->material_created}}
                         </li>
-                        <li>
+                        <li class="mb-3">
                             <span>Tecnologia Usata: </span>{{$project->technologies_used}}
                         </li>
                     </ul>
                 </div>
             </div>
-            <p>
-                <span>Qualit&agrave; del Progetto: </span>{{$project->project_grade}} su 10 
-                <i class="fas fa-circle"></i> 
-                <span>Categoria: </span>{{$project->market_category}}
-            </p>
-            <p>
-                <span>Materiale Creato: </span>{{$project->material_created}}
-                <i class="fas fa-circle"></i> 
-                <span>Tecnologia Usata: </span>{{$project->technologies_used}}
-            </p>
-
-
             <p>
                 <span>Descrizione: </span>{{$project->description}}
             </p>
