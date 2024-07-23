@@ -36,7 +36,9 @@ class ProjectController extends Controller
     {
         $data = $request->validated();
 
-        // $img_path = Storage::put('upload', $data['image']);
+        //* $img_path = Storage::put('upload', $data['image']); SENZA CONDIZIONE
+        //* $img_path = $request->hasFile('image') ? $request->image->store('uploads') : NULL; UN ALTRO MODO PER SCRIVERE CON OPERATORE TERNARIO
+        
         $img_path = $request->hasFile('image') ? Storage::put('upload', $data['image']) : null;
 
         $project = new Project();
@@ -77,16 +79,19 @@ class ProjectController extends Controller
     {
         $data = $request->validated();
 
-        // $img_path = Storage::put('upload', $data['image']);
-        $img_path = $request->hasFile('image') ? Storage::put('upload', $data['image']) : null;
+        //? per non sovrascrivere l'immagine in caso non venga caricata un'altra immagine:
+        if ($request->hasFile('image')) {
+
+            $img_path = Storage::put('upload', $request->file('image'));
+            $data['image'] = $img_path;
+        }
   
         $project->update($data); //* va dopo l'aggiornamento slug se no devo inserire anche il save()
 
         $slug = Str::of($project->title)->slug('-');
 
         $project->slug = $slug;
-        $project->image = $img_path;
-
+       
         $project->save();
 
         return redirect()->route('admin.projects.show', $project);
