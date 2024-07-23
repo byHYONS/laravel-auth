@@ -66,6 +66,7 @@
                         &:hover {background-color: $delete; color: $text2}
                     }
                 }
+
             
                 .holding {display: none;}
                 .delete__modale{
@@ -120,6 +121,39 @@
         .card {
             border-radius: 15px;
             @extend %shadow;
+
+            .crd {
+                padding: 35px 0 60px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+                .image {
+                    width: 50%;
+                    max-height: 320px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    object-fit: cover;
+                    overflow: hidden;
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .text {
+                    text-align: start;
+                    width: 50%;
+                    margin-left: 25px;
+                    li {
+                        span {
+                            color: $h_1;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
 
             p {
                 span {

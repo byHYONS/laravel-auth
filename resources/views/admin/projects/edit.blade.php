@@ -26,7 +26,7 @@
             </div>               
             @endif
 
-            <form action="{{route('admin.projects.update', $project)}}" method="POST">
+            <form action="{{route('admin.projects.update', $project)}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
 
@@ -76,7 +76,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="image" class="form-label">Immagine: </label>
-                    <input type="text" class="form-control @if($errors->get('image')) is-invalid @endif"  value="{{ old('image', $project->image)}}" id="image" name="image">
+                    <input type="file" class="form-control @if($errors->get('image')) is-invalid @endif" id="image" name="image">
                     @if ($errors->get('image'))
                         @foreach ($errors->get('image') as $message)
                             <div class="invalid-feedback">

@@ -42,6 +42,32 @@
         <div class="card p-5">
             <h2>{{$project->title}}</h2>
             <hr class="mb-5">
+
+            <div class="crd">
+                <div class="image">
+                    @if ($project->image)
+                    <img src="{{ asset('storage/' . $project->image)}}" alt="{{$project->slug}}">
+                    @else
+                    <img src="/no-image.webp" alt="no-image">
+                    @endif
+                </div>
+                <div class="text">
+                    <ul>
+                        <li>
+                            <span>Qualit&agrave; del Progetto: </span>{{$project->project_grade}} su 10 
+                        </li>
+                        <li>
+                            <span>Categoria: </span>{{$project->market_category}}
+                        </li>
+                        <li>
+                            <span>Materiale Creato: </span>{{$project->material_created}}
+                        </li>
+                        <li>
+                            <span>Tecnologia Usata: </span>{{$project->technologies_used}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <p>
                 <span>Qualit&agrave; del Progetto: </span>{{$project->project_grade}} su 10 
                 <i class="fas fa-circle"></i> 
@@ -52,6 +78,8 @@
                 <i class="fas fa-circle"></i> 
                 <span>Tecnologia Usata: </span>{{$project->technologies_used}}
             </p>
+
+
             <p>
                 <span>Descrizione: </span>{{$project->description}}
             </p>

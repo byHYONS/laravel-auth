@@ -15,9 +15,9 @@
                 <table class="table custom-table">
                     <thead class="table-deshboard">
                         <tr>
-                            <th class="col-1">id</th>
+                            <th class="col-2">Imagine</th>
                             <th class="col-4">Nome</th>
-                            <th class="col-4">Slug</th>
+                            <th class="col-3">Categoria</th>
                             <th class="col-3 text-center">Gestione</th>
                         </tr>   
                     </thead>
@@ -25,9 +25,19 @@
 
                         @foreach ($projects as $project)
                             <tr>
-                                <td>{{$project->id}}</td>
+                                {{-- <td>{{$project->id}}</td> --}}
+                                <td>
+                                    {{--? immagine --}}
+                                    <div class="thumb">
+                                        @if ($project->image)
+                                        <img src="{{ asset('storage/' . $project->image)}}" alt="{{$project->slug}}">                                        
+                                        @else
+                                        <img src="/no-image.webp" alt="no-image">
+                                        @endif
+                                    </div>                                    
+                                </td>
                                 <td>{{$project->title}}</td>
-                                <td>{{$project->slug}}</td>
+                                <td>{{$project->market_category}}</td>
                                 {{--? gestione dell'istanza --}}
                                 <td>
                                     <div class="manage text-center">
@@ -37,8 +47,6 @@
                                         <a href="{{route('admin.projects.edit', $project)}}" class="mr-10">
                                             <i class="fas fa-pen"></i>
                                         </a>
-
-                                        {{--todo NON RIESCO A PASSARE L'IDENTIFICATIVO GIUSTO, PRENDE IN AUTOMATICO IL PRIMO DELLA LISTA --}}
                                         <a href="{{$project->slug}}" class="destroy" data-slug="{{$project->slug}}">
                                             <i class="fas fa-trash"></i>
                                         </a>                                       

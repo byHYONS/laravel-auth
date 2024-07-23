@@ -33,7 +33,7 @@ class UpdateProjectRequest extends FormRequest
             'description' => 'nullable|string|min:10',
             'market_category' => 'nullable|string|min:5|max:150',
             'link' => 'nullable|string|min:10|max:255',
-            'image' => 'nullable|string|min:10|max:255',
+            'image' => 'nullable|image|max:2048|', //* dimensions:max_width:200|dimensions:ratio:3/2',
             'video' => 'nullable|string|min:10|max:255',
             'start_project' => 'nullable|date',
             'end_project' => 'nullable|date',

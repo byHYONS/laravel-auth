@@ -31,6 +31,21 @@
 
             th {color: $h_1;}
 
+            .thumb {
+                width: 120px;
+                height: 75px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                & img {
+                    width: 80%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+
             td {vertical-align: middle;}
         }
 
@@ -61,6 +76,7 @@
                     &:hover {background-color: $delete; color: $text2}
                 }
             }
+
 
             .holding {display: none;}
                 .delete__modale{
